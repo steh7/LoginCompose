@@ -1,7 +1,8 @@
-
 <?php
 
 require '../vendor/autoload.php';
+include 'index.php';
+
 
 use App\model\Usuario;
 
@@ -12,13 +13,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $usuarioObj = new Usuario($usuario, $senha);
 
-    // Verificando se é admin
+    // Verificando se o usuário é o admin
     if ($usuarioObj->verificaAdmin()) {
-        echo '<p>Login realizado com sucesso!</p>';
+        echo '<p class="sucesso">Login realizado com <strong>sucesso!</strong></p>';
     } else {
-        echo '<p>Usuário ou senha incorretos!</p>';
+        echo '<p class="incorreto">Usuário ou senha <strong>incorretos!</strong></p>';
     }
 } else {
-    echo '<p>Método de requisição inválido.</p>';
+    echo '<p>Método inválido.</p>';
 }
 ?>
