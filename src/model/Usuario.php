@@ -11,7 +11,7 @@ class Usuario {
         $this->senha = $senha;
     }
 
-    public function verificaAdmin() {
+    public function verificarAdmin() {
         return $this->usuario === 'admin' && $this->senha === 'admin123';
     }
 }

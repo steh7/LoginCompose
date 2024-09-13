@@ -1,10 +1,11 @@
 {
-    "name": "willi/atividade-form-composer",
+    "name": "steh/logincomposer",
+    "description": "A UM PASSO DE DESCOBRIR O QUE SÓ OS LOUCOS SABEM",
     "type": "project",
-    "autoload": {
-        "psr-4": {
-            "App\\": "src/"
+    "authors": [
+        {
+            "name": "STEH7"
         }
-    },
+    ],
     "require": {}
 }
